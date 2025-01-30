@@ -10,6 +10,8 @@ from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain.docstore.document import Document
 from langchain_core.prompts import PromptTemplate
+import streamlit as st
+
 
 # Hoặc tạm thời vẫn có thể import từ langchain, 
 # nhưng sẽ bị cảnh báo trong phiên bản tương lai.
@@ -23,7 +25,7 @@ from langchain.prompts.chat import (
 import os
 from dotenv import load_dotenv
 load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 from prompt.prompts import BASE_SYSTEM_PROMPT  # Từ file prompts.py
 
