@@ -1,0 +1,7 @@
+name: Michael Johnson
+age: 40
+height: 180
+weight: 75
+blood_pressure: 120/80
+heart_rate: 70
+medical_conditions: Không có
